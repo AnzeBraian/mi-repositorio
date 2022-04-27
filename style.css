@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,800&family=Poppins:wght@300;400;500;700&display=swap');
+
+:root{
+    --height-nav:70px
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+nav{
+    background: #143d64;
+    height: var(--height-nav);
+    color: #ffff;
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link{
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.encabezado__principal{
+    display: flex;
+    height: calc(100vh - var(--height-nav));
+    min-height: 600px;
+    align-items: center;
+}
+
+.encabezado__textos{
+    flex: 1;   
+}
+
+.encabezado__picture{
+    flex: 1;
+}
+
+.encabezado__img{
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.encabezado__titulo{
+    font-size: 3rem;
+}
+
+.encabezado__parrafo{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.cta{
+    background: #6c63ff;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+
+}
+
+@media screen and (max-width:900px) {
+    :root{
+        --height-nav: 100px;
+    }
+
+    .nav__container{
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .encabezado__principal{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .encabezado__picture{
+        order: -1;
+    }
+    
+    .encabezado__img{
+        max-width: 380px;
+    }
+
+    .encabezado__textos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .encabezado__titulo{
+        font-size: 2.5rem;
+    }
+
+    .encabezado__parrafo{
+        font-size: 1rem;
+    }
+}

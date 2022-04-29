@@ -22,6 +22,8 @@ body{
 
 }
 
+
+
 nav{
     background: #143d64;
     height: var(--height-nav);
@@ -122,3 +124,138 @@ nav{
         font-size: 1rem;
     }
 }
+
+.formacion{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.formacion__contenedor{
+    background: #fff;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 32px - 16px rgb(0,0,0, .5)
+}
+
+.formacion__figura{
+    height: 100%;
+    overflow: hidden;
+}
+
+.formacion__img{
+    width: 100%;
+    height:fit-content
+}
+
+.paragraph{
+    padding: .5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph__title{
+    margin-top: 100px;
+}
+.paragraph__texts{
+    margin-top: 100px;
+    text-align: center;
+    font-size: larger;
+}
+
+
+
+
+
+.form{
+    height: 400px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background: #f2f2f2;
+    box-shadow: 0 0 5px rgba(0,5,0,.9);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-auto-columns: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+}
+
+.form__input{
+    font-family: inherit;
+    outline: none;
+    font: size .10em;
+    padding: .8em 1em;
+    border: none;
+}
+
+.form__input--mensaje{
+    padding: 20px;
+    resize: none;
+}
+
+.form__cta{
+    font-family: inherit;
+    padding: 5px 0;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+@media (max-width:450px){
+    .form{
+        padding: 15px;
+    }
+}
+
+
+.pie{
+    background: #143d64;
+    color: #fff;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 150px;    
+}
+
+.pie__contenedor{
+    margin-top: 30px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.pie__red{
+    display: block;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+

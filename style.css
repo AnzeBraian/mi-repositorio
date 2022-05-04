@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,800&family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,800&family=Poppins:wght@300;400;500;700&display=swap');*/
 
 :root{
     --height-nav:70px
@@ -14,20 +14,22 @@ body{
     background: #f2f2f2;
 }
 
+.encabezado{
+    height: 100vh;
+}
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-
 }
-
-
 
 nav{
     background: #143d64;
     height: var(--height-nav);
     color: #ffff;
+    width: 100%;
+    position: fixed;
 }
 
 .nav__container{
@@ -66,6 +68,14 @@ nav{
     border-radius: 10px;
 }
 
+.encabezado__imgex{
+    width: 50%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
 .encabezado__titulo{
     font-size: 3rem;
 }
@@ -76,7 +86,7 @@ nav{
 }
 
 .cta{
-    background: #6c63ff;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     display: inline-block;
     padding: 15px 30px;
     margin-top: 1rem;
@@ -135,28 +145,30 @@ nav{
 }
 
 .formacion__contenedor{
-    background: #fff;
     width: 100%;
-    min-height: 600px;
+    min-height: 400px;
     overflow: hidden;
     padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     box-shadow: 0 0 32px - 16px rgb(0,0,0, .5)
 }
 
 .formacion__figura{
+    margin-top: 10px;
     height: 100%;
     overflow: hidden;
 }
 
 .formacion__img{
     width: 100%;
-    height:fit-content
+    height:fit-content;
+    border-radius: 10px;
 }
 
 .paragraph{
+    margin-top: 2px;
     padding: .5em 0;
     display: flex;
     flex-direction: column;
@@ -164,36 +176,195 @@ nav{
 }
 
 .paragraph__title{
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .paragraph__texts{
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
     font-size: larger;
 }
 
+.articulo1{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:30px;
+    padding: 1px;
+}
 
+.articulo1__contenedor{
+    width: 50%;
+    height: 100%;
+    padding: 1px;
+}
 
+.articulo1__parrafo1{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 90px;
+    font-size: larger;
+}
 
+.articulo1__figure{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.articulo1__img{
+    display: block;
+    margin:auto;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,5,0,.9);
+}
+
+@media screen and ( max-width:500px){
+    .articulo1{
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .articulo1__contenedor{
+        width: 100%;
+        height: 50%;
+        border: 1px solid black;
+    }
+
+    .articulo1__parrafo1{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .articulo1__figure{
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .articulo1__img{
+        display: block;
+        margin:auto;
+        height: 90%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,5,0,.9);
+    }
+}
+
+.exp{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.exp__contenedor{
+    width: 27%;
+    background: #fff;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0,5,0,.9);
+    border-radius: 10px;
+}
+
+.exp__img{
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.exp__caja{
+    padding: 30px 20px 40px;
+}
+
+.exp__title{
+    font-size: 1,5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.exp__parrafo{
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.exp__link{
+
+    display: block;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+@media screen and (max-width:900px){
+    .exp{
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .exp__contenedor{
+        width: 100%;
+        background: #fff;
+        height: auto;
+        box-shadow: 0 0 5px rgba(0,5,0,.9);
+        border-radius: 10px;
+    }
+    
+    .exp__img{
+        width: 100%;
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .exp__caja{
+        padding: 30px 20px 40px;
+    }
+    
+    .exp__title{
+        font-size: 1,5rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .exp__parrafo{
+        font-weight: 300;
+        margin: 30px 0;
+    }
+    
+    .exp__link{
+    
+        display: block;
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+        border-radius: 30px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+    }
+}
 
 .form{
     height: 400px;
     width: 90%;
     max-width: 400px;
-    margin: auto;
+    margin: 25px auto;
     background: #f2f2f2;
     box-shadow: 0 0 5px rgba(0,5,0,.9);
     padding: 30px;
     border-radius: 10px;
-}
-
-.form__container{
-    width: 100%;
-    display: grid;
-    gap: 5px;
-    grid-auto-columns: 100%;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .form__title{
@@ -201,7 +372,6 @@ nav{
     font-size: 1.9rem;
     margin-bottom: 15px;
 }
-
 .form__input{
     font-family: inherit;
     outline: none;
@@ -232,19 +402,16 @@ nav{
     }
 }
 
-
 .pie{
     background: #143d64;
     color: #fff;
     justify-content: space-between;
-    height: 100px;
+    height: 70px;
     padding: 5px;
-    overflow: hidden;
-    margin-top: 150px;    
+    margin-bottom: 0px;
 }
-
 .pie__contenedor{
-    margin-top: 30px;
+    margin-top: 20px;
     height: 30px;
     width: 100%;
     display: flex;
@@ -257,5 +424,3 @@ nav{
     margin-right: 20px;
     text-decoration: none;
 }
-
-
